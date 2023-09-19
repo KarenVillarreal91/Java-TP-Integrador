@@ -1,0 +1,113 @@
+/* Carousel base class */
+.carousel {
+    margin-bottom: 1rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 35rem;
+}
+
+.carousel-item img{
+    width: 100%;
+    filter: brightness(0.5);
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.link-success{
+    color: #29A744!important;
+}
+
+.main-text {
+    position: absolute;
+    top: 200px;
+    color: #FFF;
+    max-width: 90%;
+}
+
+.btn-tickets {
+    background-color: #29A744;
+    border: 1px solid #29A744;
+}
+
+.btn-tickets:hover{
+    background-color: #1b642b;
+}
+
+.oradores-div p{
+    font-size: .775em;
+    margin: 0;
+}
+
+.small-p{
+    font-size: .775em;
+}
+
+.oradores-div .col{
+    max-width: 350px;
+    min-width: 350px;
+}
+
+.card p,h3{
+    text-align: start;
+    margin: auto;
+}
+
+.p-tags{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: inline;
+    font-weight: 700;
+}
+
+.p-javascript{
+    background-color: #ffc107;
+}
+
+.p-react{
+    background-color: #19A1B9;
+    color: white;
+}
+
+.p-negocios{
+    background-color: #6C757E;
+    color: white;
+}
+
+.p-startups{
+    background-color: #DE3345;
+    color: white;
+}
+
+.card-honolulu{
+    background-color: #353A40;
+    color: white;
+}
+
+.punteado{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+textarea::placeholder{
+    font-size: larger;
+}
+
+.btn-enviar{
+    background-color: #96C93E;
+    border: 1px solid #96C93E;
+}
+
+.btn-enviar:hover{
+    background-color: #7aa135;
+    border: 1px solid #7aa135;
+}
