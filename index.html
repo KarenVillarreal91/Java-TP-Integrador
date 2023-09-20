@@ -11,29 +11,36 @@
 </head>
 <body>
     <hader>
-        <nav class="navbar navbar-dark sticky-top" style="background-color: #353A40;">
-            <div class="container-fluid justify-content-center d-flex flex-wrap">
-              <a class="navbar-brand d-flex align-items-center col-md-3" href="#">
-                <img src="sources/codoacodo.png" width="100" class="d-inline-block">
-                Conf Bs As
-              </a>
-              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 text-decoration-none">
-                <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white" aria-current="page">La conferencia</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#oradores" class="nav-link px-2 text-white-50" aria-current="page">Los oradores</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#lugarFecha" class="nav-link px-2 text-white-50" aria-current="page">El lugar y la fecha</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#convOrador" class="nav-link px-2 text-white-50" aria-current="page">Conviértete en orador</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#tickets" class="nav-link px-2 link-success" aria-current="page">Comprar tickets</a>
-                </li>
-              </ul>
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #353A40;">
+            <div class="container-fluid d-flex flex-wrap">
+                <a class="navbar-brand d-flex align-items-center col-md-3 justify-content-center" href="#">
+                    <img src="sources/codoacodo.png" width="100" class="d-inline-block">
+                    Conf Bs As
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 text-decoration-none">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 link-light" aria-current="page">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#oradores" class="nav-link px-2 link-secondary text-white-50" aria-current="page">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#lugarFecha" class="nav-link px-2 link-secondary text-white-50" aria-current="page">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#inscripcion" class="nav-link px-2 link-secondary text-white-50" aria-current="page">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 link-success" aria-current="page">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </hader>
@@ -64,12 +71,12 @@
                         están creando el futuro de Internet. Ven a conocer a miembros del<br> 
                         evento, a otros estudiantes de Codo a Codo y los oradores de primer<br> 
                         nivel que tenemos para ti. Te esperamos!</p>
-                    <p><a class="btn btn-outline-light" href="#">Quiero ser orador</a>
+                    <p><a class="btn btn-outline-light" href="#inscripcion">Quiero ser orador</a>
                     <a class="btn btn-success btn-tickets ms-2" href="#">Comprar tickets</a></p>
                 </div>
             </div>
-          </div>
-          <section id="oradores">
+        </div>
+        <section id="oradores">
             <div class="oradores-div">
                 <p class="text-center"><small>CONOCE A LOS</small></p>
                 <h3 class="text-center mb-2">ORADORES</h3>
@@ -139,13 +146,13 @@
                 </div>
               </div>
           </section>
-          <section id="convOrador">
+          <section id="inscripcion">
             <div class="text-center">
                 <p class="text-center p-0 m-0 mt-4 small-p"><small>CONVIÉRTETE EN UN</small></p>
                 <h3 class="text-center mb-2">ORADOR</h3>
-                <p><small>Anótate como orador para dar una <span class="punteado">charla ignite</span>. Cuéntanos de qué quieres hablar!</small></p>
                 
-                <div class="w-50 m-auto">
+                <div class="w-50 m-auto" style="min-width: 300px;">
+                    <p><small>Anótate como orador para dar una <span class="punteado">charla ignite</span>. Cuéntanos de qué quieres hablar!</small></p>
                     <form class="row g-2">
                         <div class="col-6">
                             <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
