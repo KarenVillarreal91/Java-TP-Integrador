@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="compra.js"></script>
+    <script src="orador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/codoacodo.ico">
     <title>TP Integrador JS - KV</title>
@@ -50,71 +51,20 @@
     <main>
         <section id="inscripcion">
             <div class="m-auto" style="max-width: 1300px;">
-                <div class="row w-50 m-auto text-center">
-                    <div class="col-sm-4 mt-4 p-0 pe-1">
-                    <div class="card border-primary rounded-0">
-                        <div class="card-body">
-                        <h5 class="card-title">Estudiante</h5>
-                        <p class="card-text text-center mt-3">Tienen un descuento</p>
-                        <h6 class="fw-bolder m-3">80%</h6>
-                        <p class="small-p text-center m-0 mb-1" style="color: #7c7c7c;">* presentar documentación</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-4 mt-4 p-0 pe-1">
-                    <div class="card border-info rounded-0">
-                        <div class="card-body">
-                        <h5 class="card-title">Trainee</h5>
-                        <p class="card-text text-center mt-3">Tienen un descuento</p>
-                        <h6 class="fw-bolder m-3">50%</h6>
-                        <p class="small-p text-center m-0 mb-1" style="color: #7c7c7c;">* presentar documentación</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-sm-4 mt-4 p-0">
-                        <div class="card border-warning rounded-0">
-                        <div class="card-body">
-                            <h5 class="card-title">Junior</h5>
-                            <p class="card-text text-center mt-3">Tienen un descuento</p>
-                        <h6 class="fw-bolder m-3">15%</h6>
-                        <p class="small-p text-center m-0 mb-1" style="color: #7c7c7c;">* presentar documentación</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center p-0 m-0 mt-4"><small>VENTA</small></p>
-                <h3 class="text-center mb-2">VALOR DE TICKET $200</h3>
-                
-                <div class="w-50 m-auto" style="min-width: 300px;">
-                    <div class="row g-2">
-                        <div class="col-6 mt-3">
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre">
-                        </div>
-                        <div class="col-6 mt-3">
-                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido">
-                        </div>
-                        <div class="col-12 mt-3">
-                            <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" id="correo">
-                        </div>
-                        <div class="col-6 mt-3">
-                            <label for="cantidad" class="form-label">Cantidad</label>
-                            <input type="number" class="form-control" min="1" placeholder="Cantidad" id="cantidad">
-                        </div>
-                        <div class="col-6 mt-3">
-                            <label for="categoria" class="form-label">Categoría</label>
-                            <select class="form-select" id="categoria" aria-label="Default select example">
-                                <option value="0" selected>Estudiante</option>
-                                <option value="1">Trainee</option>
-                                <option value="2">Junior</option>
-                            </select>
-                        </div>
-                        <div class="alert alert-primary mt-4 mb-0 border-0" style="color: #215db3;" role="alert" id="totalDiv" hidden>
-                            <span id="totalTexto"></span>
-                        </div>
-                        <button type="submit" class="btn btn-success btn-enviar col me-1 mt-4" onclick="borrar()">Borrar</button>
-                        <button type="submit" class="btn btn-success btn-enviar col ms-1 mt-4" onclick="traerResumen()">Resumen</button>
-                    </div>
-                </div>
+                <table class="table">
+                    <thead>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Tema</th>
+                        <th scope="col">Fecha alta</th>
+                        <th scope="col">Acción</th>
+                    </thead>
+                    <tbody id="tabla">
+
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
