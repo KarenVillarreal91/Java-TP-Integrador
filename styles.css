@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
 /* Carousel base class */
 .carousel {
     margin-bottom: 1rem;
@@ -115,4 +117,20 @@ textarea::placeholder{
 .btn-enviar:hover{
     background-color: #7aa135;
     border: 1px solid #7aa135;
+}
+
+div:where(.swal2-container) .swal2-html-container{
+    text-align: unset;
+}
+
+.btn-mod-bor{
+    padding: 0;
+    width: 45px;
+    border: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+i{
+    font-size: 20px;
 }
